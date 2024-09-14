@@ -16,7 +16,7 @@ flex-direction: column;
 }
 
 .imageWrapper {
-    height: 200px;
+    height: 220px;
     border-radius: 50%;
     overflow: hidden;
      img { width: 100%;
@@ -46,8 +46,8 @@ flex-direction: column;
    text-align: center;
    color: #7f7f7f;
    font-size: 25px; 
-   padding: 0;
-   margin: 2px;
+   padding: 5px;
+   margin: 5px;
 }
 
 .stats {
