@@ -1,8 +1,10 @@
-export default function Profile({username, tag, location, avatar = "https://cdn-icons-png.flaticon.com/512/1077/1077012.png", followers, views, likes}) {
+import s from './Profile.module.css'
+
+export default function Profile({ username, tag, location, avatar = "https://cdn-icons-png.flaticon.com/512/1077/1077012.png", followers, views, likes }) {
   return (
-    <div>
-  <div>
-    <img
+    <div className={s.frame}>
+  <div className={s.name}>
+    <img className={s.img}
       src= {avatar}
       alt="User avatar"
     />
@@ -11,7 +13,7 @@ export default function Profile({username, tag, location, avatar = "https://cdn-
     <p>{location}</p>
   </div>
 
-  <ul>
+  <ul className={s.list}>
     <li>
       <span>Followers</span>
       <span>{followers}</span>

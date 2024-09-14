@@ -1,0 +1,22 @@
+.frame{
+order: 1px solid black;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.784);
+  border-radius: 30px;
+  border: #0000;
+}
+
+.img {
+    width: 400px;
+    height: auto;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+}
