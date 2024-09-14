@@ -1,4 +1,5 @@
 import s from './Profile.module.css'
+import React from "react";
 
 export default function Profile({
   name,
@@ -10,24 +11,26 @@ export default function Profile({
   return (
     <div className={s.frame}>
       <div className={s.name}>
-        <img className={s.img} src={image} alt="User avatar" />
-        <p>{name}</p>
-        <p>{tag}</p>
-        <p>{location}</p>
+        <div className={s.imageWrapper}>
+          <img className={s.img} src={image} alt="User avatar" />
+        </div>
+        <p className={s.fullname}>{name}</p>
+        <p className={s.tag}>@{tag}</p>
+        <p className={s.location}>{location}</p>
       </div>
 
       <ul className={s.list}>
-        <li>
+        <li className={s.stats}>
           <span>Followers</span>
-          <span>{stats.followers}</span>
+          <span className={s.statsIndic}>{stats.followers}</span>
         </li>
-        <li>
+        <li className={s.stats}>
           <span>Views</span>
-          <span>{stats.views}</span>
+          <span className={s.statsIndic}>{stats.views}</span>
         </li>
-        <li>
+        <li className={s.stats}>
           <span>Likes</span>
-          <span>{stats.likes}</span>
+          <span className={s.statsIndic}>{stats.likes}</span>
         </li>
       </ul>
     </div>
