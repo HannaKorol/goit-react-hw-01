@@ -1,3 +1,15 @@
 .list {
-    color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+li {
+    border: 2px black solid;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: fit-content;
+    font-size: 20px;
 }

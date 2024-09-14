@@ -4,13 +4,13 @@ import s from './FriendList.module.css'
 export default function FriendList ({ friends }) {
     return (
       <ul className= {s.list}>
-      {friends.map((friend) => {
+      {friends.map((f) => {
         return (
-          <li key={friend.id}>
+          <li key={f.id}>
                 <FriendListItem
-                    avatar={friend.avatar}
-                    name={friend.name}
-                    isOnline={friend.isOnline}/>
+                    avatar={f.avatar}
+                    name={f.name}
+                    isOnline={f.isOnline}/>
           </li>
         );
       })}
